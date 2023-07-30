@@ -18,7 +18,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <ThemeProvider>
         <Header />
         {!hideNav && <Nav />}
-        <main className="px-7">
+        <main>
           {children}
           <ToastContainer position="bottom-left" autoClose={1000} />
         </main>

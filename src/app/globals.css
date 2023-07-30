@@ -5,8 +5,7 @@
 @layer base {
   @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Zeyada&display=swap');
   body {
-    @apply bg-[#f8fafc] text-[#687385] dark:bg-[#1b1f22]  dark:text-[#adb5bd] overflow-x-hidden;
-    /* @apply min-h-screen; */
+    @apply bg-[#f1f2f3] text-[#687385] dark:bg-[#1b1f22]  dark:text-[#adb5bd] overflow-x-hidden;
   }
 
   html {
