@@ -4,6 +4,7 @@ import {
   Button,
   Card,
   CardBody,
+  CardFooter,
   CardHeader,
   Checkbox,
   Collapse,
@@ -12,18 +13,21 @@ import {
   Navbar,
   Spinner,
   ThemeProvider,
-  Typography
+  Typography,
 } from '@material-tailwind/react';
 
 export {
   Button,
-  Card, CardBody, CardHeader, Checkbox,
+  Card,
+  CardBody,
+  CardFooter,
+  CardHeader,
+  Checkbox,
   Collapse,
   IconButton,
   Input,
   Navbar,
   Spinner,
   ThemeProvider,
-  Typography
+  Typography,
 };
-

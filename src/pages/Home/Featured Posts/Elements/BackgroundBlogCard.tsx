@@ -14,18 +14,20 @@ const BackgroundBlogCard = () => {
   const date = new Date();
   const initialContent = [
     {
-      title: 'Lorem ipsum dolor site amet!',
-      category: 'Travel',
+      title: '"Rare Bird Species Spotted: A Feathered Marvel Takes Flight!"',
+      category: 'Animal',
       content:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, rem.',
       image: '/assets/bird.jpg',
+      views: '12k',
     },
     {
-      title: 'Second Content',
-      category: 'Travel',
+      title: '"Roaring Victory: Tiger Population Surges to New Heights"',
+      category: 'Animal',
       content:
         'This is the second content. You can change it using the arrows.',
       image: '/assets/tiger.jpg',
+      views: '10k',
     },
   ];
   const [currentContentIndex, setCurrentContentIndex] = useState(0);
@@ -46,7 +48,7 @@ const BackgroundBlogCard = () => {
   return (
     <Card
       shadow={false}
-      className="relative grid lg:w-2/3 sm:w-full justify-center overflow-hidden text-center rounded-lg"
+      className="relative grid sm:w-full justify-center overflow-hidden text-center rounded-lg h-96"
     >
       <CardHeader
         floated={false}
@@ -62,14 +64,21 @@ const BackgroundBlogCard = () => {
         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50" />
       </CardHeader>
       <CardBody className="relative">
-        <Typography variant="h2" color="white" className="leading-[1.5]">
+        <Typography
+          variant="h2"
+          color="white"
+          className="leading-[1.5] flex items-center justify-center lg:h-[50vh] sm:h-auto"
+        >
           {currentContent.title}
         </Typography>
-        <Typography className="flex flex-start text-[#687385]">
-          {currentContent.category}
+        <Typography className="flex flex-start text-[#687385] font-semibold absolute bottom-20">
+          {currentContent.category}.
         </Typography>
-        <div className="mt-12 flex items-center justify-between">
-          <div>{moment(date).startOf('hour').fromNow()}</div>
+        <div className="flex items-center justify-between bottom-5 absolute mx-auto">
+          <div className="flex items-center gap-5">
+            <Typography>{moment(date).startOf('hour').fromNow()}</Typography>
+            <Typography>{currentContent.views} views </Typography>
+          </div>
           <div className="flex items-center">
             <Typography
               variant="h5"

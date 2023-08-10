@@ -1,6 +1,7 @@
 import { Typography } from '@/components/MTComponents/MTComponents';
 import { AiOutlineTag } from 'react-icons/ai';
-import BackgroundBlogCard from './Elements/Card';
+import BackgroundBlogCard from './Elements/BackgroundBlogCard';
+import BlogCard from './Elements/BlogCard';
 
 const Featured = () => {
   return (
@@ -24,8 +25,14 @@ const Featured = () => {
           </Typography>
         </div>
       </div>
-
-      <BackgroundBlogCard />
+      <div className="flex items-center sm:flex-col lg:flex-row gap-3 w-full">
+        <div className="w-full">
+          <BackgroundBlogCard />
+        </div>
+        <div className="lg:w-1/3 sm:w-full">
+          <BlogCard />
+        </div>
+      </div>
       <br />
     </div>
   );
