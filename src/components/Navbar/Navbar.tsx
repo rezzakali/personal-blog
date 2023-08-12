@@ -7,7 +7,7 @@ import {
 } from '@/components/MTComponents/MTComponents';
 import SocialMedia from '@/components/Navbar/SocialMedia';
 import { useEffect, useState } from 'react';
-import navList from './Navlist';
+import NavList from './Navlist';
 
 const Nav = () => {
   const [openNav, setOpenNav] = useState(false);
@@ -22,7 +22,7 @@ const Nav = () => {
   return (
     <Navbar className="sticky top-0 z-50 w-full rounded-none shadow-none border-none px-5 dark:bg-[#1b1f22] text-xs py-1.5 mx-auto">
       <div className="container mx-auto flex items-center justify-between">
-        <div className="hidden lg:block h-8 items-center mt-3">{navList}</div>
+        <div className="hidden lg:block h-8 items-center mt-3">{NavList}</div>
         <div className="hidden lg:block">
           <SocialMedia />
         </div>
@@ -73,7 +73,7 @@ const Nav = () => {
             unmount: { y: 25 },
           }}
         >
-          {navList}
+          {NavList}
         </Collapse>
       </div>
     </Navbar>

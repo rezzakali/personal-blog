@@ -7,7 +7,7 @@ import { RiHotelLine } from 'react-icons/ri';
 import { SiYourtraveldottv } from 'react-icons/si';
 import { TbArrowGuide } from 'react-icons/tb';
 
-const navList = (
+const Navlist = (
   <div className="mb-4 mt-2 flex flex-col lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-5 text-[#808ea3] sm:gap-y-5 sm:p-3 lg:p-0">
     <Link href="/" className="flex items-center sm:p-1 lg:p-0 ">
       <AiOutlineHome className="flex items-center justify-center h-4 w-4 mr-1" />{' '}
@@ -43,4 +43,4 @@ const navList = (
   </div>
 );
 
-export default navList;
+export default Navlist;

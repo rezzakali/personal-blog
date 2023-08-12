@@ -7,6 +7,7 @@ import {
   Typography,
 } from '@/components/MTComponents/MTComponents';
 import moment from 'moment';
+import Link from 'next/link';
 import { useState } from 'react';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 
@@ -46,58 +47,60 @@ const BackgroundBlogCard = () => {
   };
 
   return (
-    <Card
-      shadow={false}
-      className="relative grid sm:w-full justify-center overflow-hidden text-center rounded-lg h-96"
-    >
-      <CardHeader
-        floated={false}
+    <Link href="#">
+      <Card
         shadow={false}
-        color="transparent"
-        style={{
-          backgroundImage: `url('${currentContent.image}')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-        className={`absolute inset-0 m-0 h-full w-full rounded-none`}
+        className="relative grid sm:w-full justify-center overflow-hidden text-center rounded h-96 transition duration-300 ease-in hover:-translate-y-1 hover:ease-in"
       >
-        <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50" />
-      </CardHeader>
-      <CardBody className="relative">
-        <Typography
-          variant="h2"
-          color="white"
-          className="leading-[1.5] flex items-center justify-center lg:h-[50vh] sm:h-auto"
+        <CardHeader
+          floated={false}
+          shadow={false}
+          color="transparent"
+          style={{
+            backgroundImage: `url('${currentContent.image}')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+          className={`absolute inset-0 m-0 h-full w-full rounded-none`}
         >
-          {currentContent.title}
-        </Typography>
-        <Typography className="flex flex-start text-[#687385] font-semibold absolute bottom-20">
-          {currentContent.category}.
-        </Typography>
-        <div className="flex items-center justify-between bottom-5 absolute mx-auto">
-          <div className="flex items-center gap-5">
-            <Typography>{moment(date).startOf('hour').fromNow()}</Typography>
-            <Typography>{currentContent.views} views </Typography>
+          <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50" />
+        </CardHeader>
+        <CardBody className="relative">
+          <Typography
+            variant="h2"
+            color="white"
+            className="leading-[1.5] flex items-center justify-center lg:h-[50vh] sm:h-auto"
+          >
+            {currentContent.title}
+          </Typography>
+          <Typography className="flex flex-start text-[#687385] font-semibold absolute bottom-20">
+            {currentContent.category}.
+          </Typography>
+          <div className="flex items-center justify-between bottom-5 absolute mx-auto w-full">
+            <div className="flex items-center gap-5">
+              <Typography>{moment(date).startOf('hour').fromNow()}</Typography>
+              <Typography>{currentContent.views} views </Typography>
+            </div>
+            <div className="flex items-center absolute right-12 bottom-0.5">
+              <Typography
+                variant="h5"
+                className="text-gray-400"
+                onClick={handlePrevious}
+              >
+                <BsArrowLeft className="mx-2 cursor-pointer" />
+              </Typography>
+              <Typography
+                variant="h5"
+                className="text-gray-400"
+                onClick={handleNext}
+              >
+                <BsArrowRight className="mx-2 cursor-pointer" />
+              </Typography>
+            </div>
           </div>
-          <div className="flex items-center">
-            <Typography
-              variant="h5"
-              className="text-gray-400"
-              onClick={handlePrevious}
-            >
-              <BsArrowLeft className="mx-2 cursor-pointer" />
-            </Typography>
-            <Typography
-              variant="h5"
-              className="text-gray-400"
-              onClick={handleNext}
-            >
-              <BsArrowRight className="mx-2 cursor-pointer" />
-            </Typography>
-          </div>
-        </div>
-      </CardBody>
-    </Card>
+        </CardBody>
+      </Card>
+    </Link>
   );
 };
 
