@@ -5,7 +5,7 @@ import {
   IconButton,
   Navbar,
 } from '@/components/MTComponents/MTComponents';
-import SocialMedia from '@/components/Navbar/SocialMedia';
+import SocialMedia from '@/ui/SocialMedia';
 import { useEffect, useState } from 'react';
 import NavList from './Navlist';
 
