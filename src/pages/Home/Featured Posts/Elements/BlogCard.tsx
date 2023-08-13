@@ -24,7 +24,7 @@ const BlogCard = () => {
   const selectedColor = colors[randomColorKey as keyof typeof colors];
 
   return (
-    <Card className="overflow-hidden h-96 dark:bg-transparent border dark:border-gray-700 rounded transition duration-300 ease-in hover:-translate-y-1 hover:ease-in relative group">
+    <Card className="overflow-hidden dark:bg-transparent border dark:border-gray-700 rounded transition duration-300 ease-in hover:-translate-y-1 hover:ease-in relative group">
       <Link href="#">
         <CardHeader
           floated={false}
@@ -69,7 +69,7 @@ const BlogCard = () => {
           </Typography>
         </Link>
       </CardBody>
-      <CardFooter className="flex items-center justify-between gap-2">
+      <CardFooter className="flex items-center lg:justify-between sm:justify-start md:justify-start gap-2">
         <Typography variant="small" className="font-normal text-xs">
           Aug 10
         </Typography>
