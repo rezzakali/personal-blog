@@ -6,8 +6,8 @@ import MyProfile from './Elements/MyProfile';
 const TravelTips = () => {
   return (
     <div className={`${padding} bg-whitebg dark:bg-[#1f2326]`}>
-      <div className="flex item-center justify-between w-full gap-3">
-        <div className="w-2/3 my-8">
+      <div className="flex sm:flex-col md:flex-row lg:flex-row item-center justify-between w-full gap-3">
+        <div className="lg:w-2/3 md:w-2/3 sm:w-full my-8">
           <PostCategoryHeader text={`Travel Tips`} />
           <hr className="text-gray-100 dark:text-gray-700 my-8" />
           <div
@@ -20,7 +20,7 @@ const TravelTips = () => {
             <BlogCard />
           </div>
         </div>
-        <div className="1/3">
+        <div data-aos="fade-up" className="lg:w-1/3 md:w-1/3 sm:w-full">
           <MyProfile />
         </div>
       </div>
