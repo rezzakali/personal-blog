@@ -5,7 +5,7 @@ import MyProfile from './Elements/MyProfile';
 
 const TravelTips = () => {
   return (
-    <div className={`${padding} bg-whitebg dark:bg-[#1f2326]`}>
+    <div className={`${padding} bg-whitebg dark:bg-[#1b1f22]`}>
       <div className="flex sm:flex-col md:flex-row lg:flex-row item-center justify-between w-full gap-3">
         <div className="lg:w-2/3 md:w-2/3 sm:w-full my-8">
           <PostCategoryHeader text={`Travel Tips`} />

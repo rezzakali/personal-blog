@@ -1,11 +1,11 @@
 import {
   Avatar,
-  Button,
   Card,
   CardBody,
   CardFooter,
   Typography,
 } from '@/components/MTComponents/MTComponents';
+import SocialMedia from '@/ui/SocialMedia';
 
 const MyProfile = () => {
   return (
@@ -16,9 +16,9 @@ const MyProfile = () => {
           width={500}
           height={500}
           alt="profile pic"
-          className="object-cover w-12 h-12 rounded-full"
+          className="object-cover w-16 h-16 rounded-full"
         />
-        <Typography variant="h5" color="blue-gray" className="mb-2">
+        <Typography variant="h5" className="mb-2">
           Hello, I am Steven
         </Typography>
         <Typography>
@@ -27,23 +27,7 @@ const MyProfile = () => {
         </Typography>
       </CardBody>
       <CardFooter className="pt-0">
-        <Button size="sm" variant="text" className="flex items-center gap-2">
-          Follow me :
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="h-4 w-4"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-            />
-          </svg>
-        </Button>
+        Follow me : <SocialMedia />
       </CardFooter>
     </Card>
   );
