@@ -17,7 +17,7 @@ const Comment = () => {
             16 Jan 2023 .
           </Typography>
           <Typography className="mb-2 text-sm font-semibold text-textcolor">
-            Lyft launching cross-platform service this week
+            This is awesome
           </Typography>
         </div>
         <Avatar
