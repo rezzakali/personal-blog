@@ -15,12 +15,15 @@ const Featured = () => {
         <div className="w-full">
           <BackgroundBlogCard />
         </div>
-        <div className="lg:w-1/3 sm:w-full">
+        <div data-aos="fade-up" className="lg:w-1/3 sm:w-full">
           <BlogCard />
         </div>
       </div>
       <br />
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+      <div
+        data-aos="fade-up"
+        className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3"
+      >
         <BlogCard />
         <BlogCard />
         <BlogCard />
