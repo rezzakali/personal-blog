@@ -1,6 +1,7 @@
 'use client';
 
 import {
+  Avatar,
   Button,
   Card,
   CardBody,
@@ -13,11 +14,11 @@ import {
   Navbar,
   Spinner,
   ThemeProvider,
-  Typography,
+  Typography
 } from '@material-tailwind/react';
 
 export {
-  Button,
+  Avatar, Button,
   Card,
   CardBody,
   CardFooter,
@@ -29,5 +30,6 @@ export {
   Navbar,
   Spinner,
   ThemeProvider,
-  Typography,
+  Typography
 };
+
