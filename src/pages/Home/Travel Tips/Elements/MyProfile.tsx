@@ -9,8 +9,8 @@ import SocialMedia from '@/ui/SocialMedia';
 
 const MyProfile = () => {
   return (
-    <Card className="mt-6 overflow-hidden dark:bg-transparent border dark:border-gray-700 rounded transition duration-300 ease-in hover:-translate-y-1 hover:ease-in space-y-8">
-      <CardBody>
+    <Card className="mt-6 overflow-hidden dark:bg-transparent border dark:border-gray-700 rounded transition duration-300 ease-in hover:-translate-y-1 hover:ease-in">
+      <CardBody className="space-y-8">
         <Avatar
           src={`/assets/team.jpg`}
           width={500}
