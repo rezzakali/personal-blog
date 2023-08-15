@@ -17,7 +17,7 @@ const Comment = () => {
             16 Jan 2023 .
           </Typography>
           <Typography className="mb-2 text-sm font-semibold text-textcolor">
-            This is awesome
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </Typography>
         </div>
         <Avatar
