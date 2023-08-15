@@ -24,7 +24,10 @@ const BlogCard = () => {
   const selectedColor = colors[randomColorKey as keyof typeof colors];
 
   return (
-    <Card className="overflow-hidden dark:bg-transparent border dark:border-gray-700 rounded transition duration-300 ease-in hover:-translate-y-1 hover:ease-in relative group">
+    <Card
+      data-aos="fade-up"
+      className="overflow-hidden dark:bg-transparent border dark:border-gray-700 rounded transition duration-300 ease-in hover:-translate-y-1 hover:ease-in relative group"
+    >
       <Link href="#">
         <CardHeader
           floated={false}

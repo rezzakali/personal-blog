@@ -47,7 +47,7 @@ const BackgroundBlogCard = () => {
   };
 
   return (
-    <Link href="#">
+    <Link href="#" data-aos="fade-up">
       <Card
         shadow={false}
         className="relative grid sm:w-full justify-center overflow-hidden text-center rounded h-96 transition duration-300 ease-in hover:-translate-y-1 hover:ease-in"
@@ -67,34 +67,33 @@ const BackgroundBlogCard = () => {
         </CardHeader>
         <CardBody className="relative">
           <Typography
-            variant="h2"
             color="white"
-            className="leading-[1.5] flex items-center justify-center lg:h-[50vh] sm:h-auto"
+            className="leading-[1.5] flex items-center justify-center sm:h-[40vh] md:h-[50vh] lg:h-[50vh] lg:text-3xl md:text-xl sm:text-lg"
           >
             {currentContent.title}
           </Typography>
           <Typography className="flex flex-start text-[#687385] font-semibold absolute bottom-20">
             {currentContent.category}.
           </Typography>
-          <div className="flex items-center justify-between bottom-5 absolute mx-auto w-full">
-            <div className="flex items-center gap-5">
+          <div className="flex items-center sm:justify-start md:justify-start lg:justify-between bottom-5 absolute mx-auto w-full">
+            <div className="flex items-center sm:gap-1 md:gap-3 lg:gap-5">
               <Typography>{moment(date).startOf('hour').fromNow()}</Typography>
               <Typography>{currentContent.views} views </Typography>
             </div>
-            <div className="flex items-center absolute right-12 bottom-0.5">
+            <div className="flex items-center absolute sm:right-8 lg:right-12 bottom-0.5">
               <Typography
                 variant="h5"
                 className="text-gray-400"
                 onClick={handlePrevious}
               >
-                <BsArrowLeft className="mx-2 cursor-pointer" />
+                <BsArrowLeft className="sm:mx-1 md:mx-2 lg:mx-2 cursor-pointer" />
               </Typography>
               <Typography
                 variant="h5"
                 className="text-gray-400"
                 onClick={handleNext}
               >
-                <BsArrowRight className="mx-2 cursor-pointer" />
+                <BsArrowRight className="sm:mx-1 md:mx-2 lg:mx-2 cursor-pointer" />
               </Typography>
             </div>
           </div>

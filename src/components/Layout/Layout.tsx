@@ -3,6 +3,8 @@
 import Header from '@/components/Header/Header';
 import { ThemeProvider } from '@/components/MTComponents/MTComponents';
 import ScrollToTop from '@/ui/ScrollToTop';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { ThemeProvider as NextThemeProvider } from 'next-themes';
 import { usePathname } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
@@ -28,6 +30,16 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
+  }, []);
+
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      offset: 50,
+      duration: 1500,
+      useClassNames: false,
+      animatedClassName: 'aos-animate',
+    });
   }, []);
 
   return (
