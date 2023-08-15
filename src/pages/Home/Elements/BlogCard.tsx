@@ -9,6 +9,7 @@ import {
 } from '@/components/MTComponents/MTComponents';
 import colors from '@/ui/PostCategoryColor';
 import SocialMedia from '@/ui/SocialMedia';
+import TimeViewsRead from '@/ui/TimeViewsRead';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -75,24 +76,7 @@ const BlogCard = () => {
         </Link>
       </CardBody>
       <CardFooter className="flex items-center lg:justify-between sm:justify-start md:justify-start gap-2">
-        <Typography
-          variant="small"
-          className="font-normal text-xs  text-textcolor"
-        >
-          Aug 10 .
-        </Typography>
-        <Typography
-          variant="small"
-          className="font-normal capitalize text-xs  text-textcolor"
-        >
-          12 Mins read .
-        </Typography>
-        <Typography
-          variant="small"
-          className="font-normal capitalize text-xs  text-textcolor"
-        >
-          12k views .
-        </Typography>
+        <TimeViewsRead />
       </CardFooter>
     </Card>
   );

@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Fragment } from 'react';
 import SubscribeInput from './Elements/SubscribeInput';
 import Featured from './Featured Posts/Featured';
+import LatestPost from './Latest Post/LatestPost';
 import TravelTips from './Travel Tips/TravelTips';
 
 const Home = () => {
@@ -44,6 +45,10 @@ const Home = () => {
       {/* travel tips section start from here */}
       <TravelTips />
       {/* travel tips section end from here */}
+
+      {/* latest tips section start from here */}
+      <LatestPost />
+      {/* latest tips section end from here */}
     </Fragment>
   );
 };
