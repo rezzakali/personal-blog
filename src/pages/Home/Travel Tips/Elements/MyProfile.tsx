@@ -9,14 +9,14 @@ import {
 
 const MyProfile = () => {
   return (
-    <Card className="mt-6 w-96">
+    <Card className="overflow-hidden dark:bg-transparent border dark:border-gray-700 rounded transition duration-300 ease-in hover:-translate-y-1 hover:ease-in">
       <CardBody>
         <Avatar
           src={`/assets/team.jpg`}
           width={500}
           height={500}
           alt="profile pic"
-          className="object-cover w-7 h-7 rounded-full"
+          className="object-cover w-9 h-9 rounded-full"
         />
         <Typography variant="h5" color="blue-gray" className="mb-2">
           Hello, I am Steven
