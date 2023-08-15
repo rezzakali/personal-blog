@@ -79,19 +79,19 @@ const BlogCard = () => {
           variant="small"
           className="font-normal text-xs  text-textcolor"
         >
-          Aug 10.
+          Aug 10 .
         </Typography>
         <Typography
           variant="small"
           className="font-normal capitalize text-xs  text-textcolor"
         >
-          12 Mins read.
+          12 Mins read .
         </Typography>
         <Typography
           variant="small"
           className="font-normal capitalize text-xs  text-textcolor"
         >
-          12k views.
+          12k views .
         </Typography>
       </CardFooter>
     </Card>

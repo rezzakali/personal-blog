@@ -29,6 +29,7 @@ const Featured = () => {
         <BlogCard />
         <BlogCard />
       </div>
+      <br />
     </div>
   );
 };
