@@ -6,6 +6,7 @@ export default withMT({
     './src/components/**/*.{js,ts,jsx,tsx}',
     './src/app/**/*.{js,ts,jsx,tsx}',
     './src/ui/**/*.{js,ts,jsx,tsx}',
+    './src/utils/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     screens: {
@@ -24,7 +25,13 @@ export default withMT({
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
     },
-    extend: {},
+    extend: {
+      colors: {
+        darkbg: '#212529',
+        whitebg: '#fdfeff',
+        textcolor: '#808ea3',
+      },
+    },
   },
   plugins: [],
 });

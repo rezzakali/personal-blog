@@ -67,19 +67,28 @@ const BlogCard = () => {
         )}
 
         <Link href="#">
-          <Typography variant="h5">
+          <Typography variant="h5" className="text-textcolor">
             Want fluffy Japanese pancakes but can&apos;t fly to Tokyo?
           </Typography>
         </Link>
       </CardBody>
       <CardFooter className="flex items-center lg:justify-between sm:justify-start md:justify-start gap-2">
-        <Typography variant="small" className="font-normal text-xs">
+        <Typography
+          variant="small"
+          className="font-normal text-xs  text-textcolor"
+        >
           Aug 10
         </Typography>
-        <Typography variant="small" className="font-normal capitalize text-xs">
+        <Typography
+          variant="small"
+          className="font-normal capitalize text-xs  text-textcolor"
+        >
           12 Mins read
         </Typography>
-        <Typography variant="small" className="font-normal capitalize text-xs">
+        <Typography
+          variant="small"
+          className="font-normal capitalize text-xs  text-textcolor"
+        >
           12k views
         </Typography>
       </CardFooter>

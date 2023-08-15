@@ -1,11 +1,12 @@
+import { padding } from '@/utils/padding';
 import Header from '../../../ui/PostCategoryHeader';
+import BlogCard from '../Elements/BlogCard';
 import Tag from '../Elements/Tag';
 import BackgroundBlogCard from './Elements/BackgroundBlogCard';
-import BlogCard from './Elements/BlogCard';
 
 const Featured = () => {
   return (
-    <div className="px-7 bg-[#fdfeff] dark:bg-[#212529]">
+    <div className={`${padding}  bg-whitebg dark:bg-darkbg`}>
       <div className="my-5 py-5 flex items-center justify-between">
         <Header text={`Featured Posts`} />
         <Tag />

@@ -67,7 +67,7 @@ const Nav = () => {
       <div className="ml-auto">
         <Collapse
           open={openNav}
-          className="fixed right-0 top-[40px] overflow-y-auto bg-white dark:bg-[#212529] w-52 z-50"
+          className="fixed right-0 top-[40px] overflow-y-auto bg-white dark:bg-darkbg w-52 z-50"
           animate={{
             mount: { y: 0 },
             unmount: { y: 25 },
