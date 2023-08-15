@@ -7,12 +7,12 @@ import Image from 'next/image';
 
 const LatestPostCard = () => {
   return (
-    <Card className="overflow-hidden dark:bg-transparent rounded transition duration-300 ease-in hover:-translate-y-1 hover:ease-in">
+    <Card className="overflow-hidden dark:bg-transparent rounded transition duration-300 ease-in hover:-translate-y-1 hover:ease-in shadow-none">
       <CardBody className="flex flex-row-reverse items-center justify-center gap-2">
         <div>
           <Typography
             variant="small"
-            className="text-xs font-medium text-green-500"
+            className="text-xs font-medium text-green-500 lg:space-y-4 sm:space-y-0 md:space-y-4"
           >
             Food .
           </Typography>
@@ -47,7 +47,7 @@ const LatestPostCard = () => {
             width={200}
             height={200}
             alt="card-image"
-            className="object-cover rounded transition ease-in hover:scale-105 duration-300"
+            className="object-cover rounded transition ease-in hover:scale-105 duration-300 w-52 lg:h-auto md:h-auto sm:h-28 sm:w-52"
           />
         </div>
       </CardBody>

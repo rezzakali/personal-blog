@@ -1,6 +1,7 @@
 import Hr from '@/ui/Hr';
 import PostCategoryHeader from '@/ui/PostCategoryHeader';
 import { padding } from '@/utils/padding';
+import LastComments from '../Last Comments/LastComments';
 import LatestPostCard from './LatestPostCard';
 
 const LatestPost = () => {
@@ -19,6 +20,7 @@ const LatestPost = () => {
         <div className="lg:w-1/3 md:w-1/3 sm:w-full">
           <PostCategoryHeader text={`Last Comments`} />
           <Hr />
+          <LastComments />
         </div>
       </div>
     </div>

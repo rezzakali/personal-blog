@@ -2,8 +2,8 @@ import Hr from '@/ui/Hr';
 import PostCategoryHeader from '@/ui/PostCategoryHeader';
 import { padding } from '@/utils/padding';
 import BlogCard from '../Elements/BlogCard';
-import MostPopularBlogCard from './Elements/MostPopularBlogCard';
-import MyProfile from './Elements/MyProfile';
+import MyProfile from '../Elements/MyProfile';
+import MostPopularBlogCard from '../Most Popular Post/MostPopularBlogCard';
 
 const TravelTips = () => {
   return (
