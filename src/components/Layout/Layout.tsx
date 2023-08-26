@@ -10,6 +10,9 @@ import { usePathname } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css';
+import Footer from '../Footer/Footer';
 import Nav from '../Navbar/Navbar';
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
@@ -51,6 +54,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           {children}
           <ToastContainer position="bottom-left" autoClose={1000} />
         </main>
+        <Footer />
         {showScroll && <ScrollToTop />}
       </ThemeProvider>
     </NextThemeProvider>

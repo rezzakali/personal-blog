@@ -1,6 +1,8 @@
 import { Typography } from '@/components/MTComponents/MTComponents';
 import Image from 'next/image';
 import { Fragment } from 'react';
+import DifferentPostTabs from './DifferentPostTabs/DifferentPostTabs';
+import CategorySlider from './Elements/CategorySlider';
 import SubscribeInput from './Elements/SubscribeInput';
 import Featured from './Featured Posts/Featured';
 import LatestPost from './Latest Post/LatestPost';
@@ -49,6 +51,13 @@ const Home = () => {
       {/* latest tips section start from here */}
       <LatestPost />
       {/* latest tips section end from here */}
+
+      {/* different post tabs start from here */}
+      <DifferentPostTabs />
+      {/* different post tabs end from here */}
+      {/* caterogry slider start from here */}
+      <CategorySlider />
+      {/* caterogry slider end from here */}
     </Fragment>
   );
 };
